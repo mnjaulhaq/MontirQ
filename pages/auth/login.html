@@ -1,0 +1,345 @@
+<!doctype html>
+<html lang="id">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+    <title>Masuk - MontirQ</title>
+
+    <!-- CSS Global -->
+    <link rel="stylesheet" href="css/style.css" />
+
+    <!-- CSS Khusus Login -->
+    <link rel="stylesheet" href="css/login.css" />
+  </head>
+
+  <body>
+    <!-- ================================
+         HALAMAN LOGIN MONTIRQ
+    ================================= -->
+
+    <main class="auth-page">
+      <!-- ================================
+             BAGIAN KIRI
+             INFORMASI MONTIRQ
+        ================================= -->
+
+      <section class="auth-introduction">
+        <a href="App.html" class="auth-logo">
+          <img src="assets/icons/logo-montirQ.jpeg" alt="Logo MontirQ" />
+
+          <span>Montir<span>Q</span></span>
+        </a>
+
+        <div class="auth-introduction-content">
+          <span class="auth-label"> PLATFORM LAYANAN OTOMOTIF </span>
+
+          <h1>
+            Solusi Kendaraan
+            <span>Lebih Cepat</span>
+            dan Mudah
+          </h1>
+
+          <p>
+            Temukan montir, bengkel, dan layanan bantuan kendaraan sesuai
+            kebutuhan Anda melalui satu platform.
+          </p>
+
+          <div class="auth-feature-list">
+            <div class="auth-feature">
+              <div class="auth-feature-icon">🔧</div>
+
+              <div>
+                <h3>Montir Terpercaya</h3>
+
+                <p>Temukan montir sesuai lokasi dan kebutuhan.</p>
+              </div>
+            </div>
+
+            <div class="auth-feature">
+              <div class="auth-feature-icon">📍</div>
+
+              <div>
+                <h3>Lokasi Lebih Mudah</h3>
+
+                <p>Cari bantuan kendaraan di sekitar Anda.</p>
+              </div>
+            </div>
+
+            <div class="auth-feature">
+              <div class="auth-feature-icon">🚨</div>
+
+              <div>
+                <h3>Bantuan Darurat</h3>
+
+                <p>Dapatkan bantuan ketika kendaraan bermasalah.</p>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div class="auth-decoration auth-decoration-one"></div>
+
+        <div class="auth-decoration auth-decoration-two"></div>
+      </section>
+
+      <!-- ================================
+             BAGIAN KANAN
+             FORM LOGIN DAN DAFTAR
+        ================================= -->
+
+      <section class="auth-form-section">
+        <!-- Tombol Kembali -->
+
+        <a href="App.html" class="back-home"> ← Kembali ke Beranda </a>
+
+<!-- Form Login -->
+
+        <div class="auth-form-container" id="loginForm">
+          <div class="auth-form-header">
+            <span class="form-small-title"> SELAMAT DATANG </span>
+
+            <h2>Masuk ke MontirQ</h2>
+
+            <p>Masuk untuk menemukan layanan kendaraan yang Anda butuhkan.</p>
+          </div>
+
+          <form action="#" class="auth-form">
+            <div class="form-group">
+              <label for="loginEmail"> Email atau Nomor HP </label>
+
+              <div class="input-container">
+                <span class="input-icon"> 👤 </span>
+
+                <input
+                  type="text"
+                  id="loginEmail"
+                  placeholder="Masukkan email atau nomor HP"
+                />
+              </div>
+            </div>
+
+            <div class="form-group">
+              <label for="loginPassword"> Kata Sandi </label>
+
+              <div class="input-container">
+                <span class="input-icon"> 🔒 </span>
+
+                <input
+                  type="password"
+                  id="loginPassword"
+                  placeholder="Masukkan kata sandi"
+                />
+
+                <button
+                  type="button"
+                  class="show-password"
+                  aria-label="Tampilkan kata sandi"
+                >
+                  👁
+                </button>
+              </div>
+            </div>
+
+            <div class="form-options">
+              <label class="remember-me">
+                <input type="checkbox" />
+
+                <span> Ingat saya </span>
+              </label>
+
+              <a href="#" class="forgot-password"> Lupa kata sandi? </a>
+            </div>
+
+            <button type="submit" class="auth-submit-button">
+              Masuk ke MontirQ
+              <span>→</span>
+            </button>
+          </form>
+
+          <div class="auth-divider">
+            <span> atau </span>
+          </div>
+
+          <button type="button" class="google-login">
+            <span class="google-icon"> G </span>
+
+            Lanjutkan dengan Google
+          </button>
+
+          <p class="change-form-text">
+            Belum memiliki akun?
+
+            <button type="button" class="change-form-button" id="showRegister">
+              Daftar sekarang
+            </button>
+          </p>
+        </div>
+
+<!-- Form Daftar -->
+
+        <div class="auth-form-container hidden-form" id="registerForm">
+          <div class="auth-form-header">
+            <span class="form-small-title"> BUAT AKUN BARU </span>
+
+            <h2>Bergabung dengan MontirQ</h2>
+
+            <p>Pilih peran dan mulai menggunakan layanan MontirQ.</p>
+          </div>
+
+          <form action="#" class="auth-form">
+            <div class="form-group">
+              <label for="registerName"> Nama Lengkap </label>
+
+              <div class="input-container">
+                <span class="input-icon"> 👤 </span>
+
+                <input
+                  type="text"
+                  id="registerName"
+                  placeholder="Masukkan nama lengkap"
+                />
+              </div>
+            </div>
+
+            <div class="form-group">
+              <label for="registerEmail"> Email atau Nomor HP </label>
+
+              <div class="input-container">
+                <span class="input-icon"> ✉ </span>
+
+                <input
+                  type="text"
+                  id="registerEmail"
+                  placeholder="Masukkan email atau nomor HP"
+                />
+              </div>
+            </div>
+
+            <!-- Pilihan Peran -->
+
+            <div class="form-group">
+              <label> Daftar sebagai </label>
+
+              <div class="role-selection">
+                <label class="role-card">
+                  <input type="radio" name="role" value="pengguna" checked />
+
+                  <span class="role-content">
+                    <span class="role-icon"> 🚗 </span>
+
+                    <span>
+                      <strong> Pengguna </strong>
+
+                      <small> Cari montir dan layanan </small>
+                    </span>
+                  </span>
+                </label>
+
+                <label class="role-card">
+                  <input type="radio" name="role" value="montir" />
+
+                  <span class="role-content">
+                    <span class="role-icon"> 🔧 </span>
+
+                    <span>
+                      <strong> Montir </strong>
+
+                      <small> Tawarkan jasa perbaikan </small>
+                    </span>
+                  </span>
+                </label>
+
+                <label class="role-card">
+                  <input type="radio" name="role" value="bengkel" />
+
+                  <span class="role-content">
+                    <span class="role-icon"> 🏪 </span>
+
+                    <span>
+                      <strong> Bengkel </strong>
+
+                      <small> Kelola layanan bengkel </small>
+                    </span>
+                  </span>
+                </label>
+              </div>
+            </div>
+
+            <div class="form-group">
+              <label for="registerPassword"> Buat Kata Sandi </label>
+
+              <div class="input-container">
+                <span class="input-icon"> 🔒 </span>
+
+                <input
+                  type="password"
+                  id="registerPassword"
+                  placeholder="Buat kata sandi"
+                />
+              </div>
+            </div>
+
+            <label class="agreement">
+              <input type="checkbox" />
+
+              <span>
+                Saya menyetujui
+                <a href="#"> Syarat & Ketentuan </a>
+                serta
+                <a href="#"> Kebijakan Privasi </a>
+              </span>
+            </label>
+
+            <button type="submit" class="auth-submit-button">
+              Buat Akun MontirQ
+              <span>→</span>
+            </button>
+          </form>
+
+          <p class="change-form-text">
+            Sudah memiliki akun?
+
+            <button type="button" class="change-form-button" id="showLogin">
+              Masuk sekarang
+            </button>
+          </p>
+        </div>
+      </section>
+    </main>
+
+    <!-- JavaScript -->
+
+    <script>
+      const loginForm = document.getElementById("loginForm");
+      const registerForm = document.getElementById("registerForm");
+      const showRegister = document.getElementById("showRegister");
+      const showLogin = document.getElementById("showLogin");
+
+      showRegister.addEventListener("click", function () {
+        loginForm.classList.add("hidden-form");
+        registerForm.classList.remove("hidden-form");
+      });
+
+      showLogin.addEventListener("click", function () {
+        registerForm.classList.add("hidden-form");
+        loginForm.classList.remove("hidden-form");
+      });
+
+      const passwordButtons = document.querySelectorAll(".show-password");
+
+      passwordButtons.forEach(function (button) {
+        button.addEventListener("click", function () {
+          const input = button.parentElement.querySelector("input");
+          if (input.type === "password") {
+            input.type = "text";
+            button.textContent = "🙈";
+          } else {
+            input.type = "password";
+            button.textContent = "👁";
+          }
+        });
+      });
+    </script>
+  </body>
+</html>

@@ -1,14 +1,601 @@
-<!DOCTYPE html>
-<html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Services - MontirQ</title>
-</head>
-<body>
-    <!-- MontirQ Rescue -->
-    <!-- Booking Service -->
-    <!-- Search Bengkel -->
-    <!-- MontirQ Market -->
-</body>
+<!doctype html>
+
+<html lang="id">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+    <title>Layanan MontirQ</title>
+
+    <link rel="stylesheet" href="css/style.css" />
+    <link rel="stylesheet" href="css/services.css" />
+  </head>
+
+  <body>
+    <!-- Header -->
+
+    <header class="header">
+      <nav class="navbar">
+        <!-- Logo MontirQ -->
+        <a href="App.html" class="navbar-logo">
+          <img
+            src="assets/icons/logo-montirQ.png"
+            alt="Logo MontirQ"
+            class="logo-image"
+          />
+
+          <span>MontirQ</span>
+        </a>
+
+        <!-- Menu Navigasi -->
+        <div class="navbar-menu">
+          <a href="App.html" class="nav-link"> Beranda </a>
+
+          <a href="About.html" class="nav-link"> About </a>
+
+          <a href="Services.html" class="nav-link active"> Services </a>
+        </div>
+
+        <!-- Tombol Masuk -->
+        <div class="navbar-action">
+          <a href="#" class="btn-login"> Masuk </a>
+
+          <a href="#" class="btn-primary"> Daftar </a>
+        </div>
+
+        <!-- Tombol Menu Mobile -->
+        <button class="menu-toggle" aria-label="Buka menu">
+          <span></span>
+          <span></span>
+          <span></span>
+        </button>
+      </nav>
+    </header>
+
+    <!-- Hero Services -->
+
+    <section class="services-hero">
+      <div class="services-hero-container">
+        <div class="services-hero-content">
+          <span class="services-hero-label"> LAYANAN MONTIRQ </span>
+
+          <h1 class="services-hero-title">
+            Solusi Kendaraan
+            <span>Dalam Satu Aplikasi</span>
+          </h1>
+
+          <p class="services-hero-description">
+            MontirQ membantu Anda menemukan montir, bengkel, layanan darurat,
+            dan kebutuhan kendaraan dengan lebih mudah, cepat, dan praktis.
+          </p>
+
+          <div class="services-hero-action">
+            <a href="#layanan" class="btn-primary">
+              Lihat Layanan
+
+              <span>→</span>
+            </a>
+
+            <a href="#cara-kerja" class="btn-secondary"> Cara Kerja </a>
+          </div>
+        </div>
+
+        <!-- Visual Hero -->
+
+        <div class="services-hero-visual">
+          <div class="services-main-circle">
+            <img src="assets/icons/logo-montirQ.png" alt="MontirQ" />
+          </div>
+
+          <div class="service-floating-card emergency-card">
+            <div class="service-card-icon">🚨</div>
+
+            <div>
+              <h3>Bantuan Darurat</h3>
+
+              <p>Montir siap membantu</p>
+            </div>
+          </div>
+
+          <div class="service-floating-card mechanic-card">
+            <div class="service-card-icon">🔧</div>
+
+            <div>
+              <h3>Cari Montir</h3>
+
+              <p>Sesuai lokasi Anda</p>
+            </div>
+          </div>
+
+          <div class="service-floating-card workshop-card">
+            <div class="service-card-icon">🏪</div>
+
+            <div>
+              <h3>Cari Bengkel</h3>
+
+              <p>Bengkel terpercaya</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Layanan Utama -->
+
+    <section class="main-services" id="layanan">
+      <div class="main-services-container">
+        <div class="section-heading">
+          <span class="section-label"> LAYANAN UTAMA </span>
+
+          <h2 class="section-title">
+            Semua Kebutuhan Kendaraan
+            <span>Dalam Satu Tempat</span>
+          </h2>
+
+          <p class="section-description">
+            MontirQ menyediakan berbagai layanan untuk membantu pengguna ketika
+            mengalami masalah kendaraan maupun membutuhkan perawatan rutin.
+          </p>
+        </div>
+
+        <div class="services-grid">
+          <!-- Layanan 1 -->
+
+          <article class="service-item">
+            <div class="service-item-number">01</div>
+
+            <div class="service-item-icon">🔧</div>
+
+            <h3>Cari Montir Terdekat</h3>
+
+            <p>
+              Temukan montir yang tersedia di sekitar lokasi Anda untuk membantu
+              menangani masalah kendaraan.
+            </p>
+
+            <a href="#" class="service-link">
+              Pelajari Layanan
+
+              <span>→</span>
+            </a>
+          </article>
+
+          <!-- Layanan 2 -->
+
+          <article class="service-item featured-service">
+            <div class="service-badge">LAYANAN UTAMA</div>
+
+            <div class="service-item-number">02</div>
+
+            <div class="service-item-icon">🚨</div>
+
+            <h3>Bantuan Darurat</h3>
+
+            <p>
+              Kirim permintaan bantuan ketika kendaraan mengalami masalah di
+              tengah perjalanan.
+            </p>
+
+            <a href="#" class="service-link">
+              Minta Bantuan
+
+              <span>→</span>
+            </a>
+          </article>
+
+          <!-- Layanan 3 -->
+
+          <article class="service-item">
+            <div class="service-item-number">03</div>
+
+            <div class="service-item-icon">🏪</div>
+
+            <h3>Cari Bengkel</h3>
+
+            <p>
+              Temukan bengkel sesuai kebutuhan dan lihat informasi layanan yang
+              tersedia.
+            </p>
+
+            <a href="#" class="service-link">
+              Cari Bengkel
+
+              <span>→</span>
+            </a>
+          </article>
+
+          <!-- Layanan 4 -->
+
+          <article class="service-item">
+            <div class="service-item-number">04</div>
+
+            <div class="service-item-icon">🛒</div>
+
+            <h3>Marketplace Otomotif</h3>
+
+            <p>
+              Cari dan beli berbagai kebutuhan kendaraan dari penjual yang
+              terdaftar.
+            </p>
+
+            <a href="#" class="service-link">
+              Lihat Produk
+
+              <span>→</span>
+            </a>
+          </article>
+
+          <!-- Layanan 5 -->
+
+          <article class="service-item">
+            <div class="service-item-number">05</div>
+
+            <div class="service-item-icon">📅</div>
+
+            <h3>Booking Servis</h3>
+
+            <p>
+              Buat jadwal servis kendaraan tanpa harus menunggu lama di bengkel.
+            </p>
+
+            <a href="#" class="service-link">
+              Buat Jadwal
+
+              <span>→</span>
+            </a>
+          </article>
+
+          <!-- Layanan 6 -->
+
+          <article class="service-item">
+            <div class="service-item-number">06</div>
+
+            <div class="service-item-icon">⭐</div>
+
+            <h3>Rating dan Ulasan</h3>
+
+            <p>
+              Lihat penilaian pengguna sebelum memilih montir, bengkel, atau
+              penjual.
+            </p>
+
+            <a href="#" class="service-link">
+              Lihat Informasi
+
+              <span>→</span>
+            </a>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <!-- Detail Layanan -->
+
+    <section class="service-details">
+      <div class="service-details-container">
+        <!-- Detail Cari Montir -->
+
+        <div class="service-detail-row">
+          <div class="service-detail-visual">
+            <div class="detail-main-icon">🔧</div>
+
+            <div class="detail-location-card">
+              <span> 📍 </span>
+
+              <div>
+                <strong> Montir Terdekat </strong>
+
+                <p>Berada di sekitar Anda</p>
+              </div>
+            </div>
+          </div>
+
+          <div class="service-detail-content">
+            <span class="section-label"> CARI MONTIR </span>
+
+            <h2 class="section-title">
+              Temukan Montir
+              <span>Tanpa Harus Mencari Jauh</span>
+            </h2>
+
+            <p class="section-description">
+              Ketika kendaraan mengalami masalah, pengguna dapat melihat montir
+              yang tersedia dan memilih montir berdasarkan lokasi, layanan,
+              rating, serta informasi lainnya.
+            </p>
+
+            <ul class="detail-list">
+              <li>
+                <span>✓</span>
+
+                Montir berdasarkan lokasi
+              </li>
+
+              <li>
+                <span>✓</span>
+
+                Informasi layanan montir
+              </li>
+
+              <li>
+                <span>✓</span>
+
+                Rating dan ulasan pengguna
+              </li>
+
+              <li>
+                <span>✓</span>
+                Status ketersediaan montir
+              </li>
+            </ul>
+          </div>
+        </div>
+
+        <!-- Detail Bantuan Darurat -->
+        <div class="service-detail-row reverse-detail">
+          <div class="service-detail-content">
+            <span class="section-label"> BANTUAN DARURAT </span>
+
+            <h2 class="section-title">
+              Butuh Bantuan
+              <span>Ketika Kendaraan Mogok?</span>
+            </h2>
+
+            <p class="section-description">
+              Kirim permintaan bantuan melalui MontirQ. Permintaan akan
+              diteruskan kepada montir yang sesuai dan tersedia di sekitar
+              lokasi pengguna.
+            </p>
+
+            <ul class="detail-list">
+              <li>
+                <span>✓</span>
+
+                Kirim lokasi kendaraan
+              </li>
+
+              <li>
+                <span>✓</span>
+
+                Pilih jenis masalah
+              </li>
+
+              <li>
+                <span>✓</span>
+
+                Pantau status permintaan
+              </li>
+              <li>
+                <span>✓</span>
+                Komunikasi dengan montir
+              </li>
+            </ul>
+          </div>
+
+          <div class="service-detail-visual emergency-visual">
+            <div class="detail-main-icon">🚨</div>
+
+            <div class="detail-status-card">
+              <span class="status-dot"></span>
+              <div>
+                <strong> Bantuan Diproses </strong>
+                <p>Montir sedang menuju lokasi</p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Cara Menggunakan -->
+
+    <section class="how-it-works" id="cara-kerja">
+      <div class="how-it-works-container">
+        <div class="section-heading">
+          <span class="section-label"> CARA MENGGUNAKAN </span>
+          <h2 class="section-title">
+            Mudah Digunakan
+            <span>Dalam Empat Langkah</span>
+          </h2>
+          <p class="section-description">
+            MontirQ dirancang agar pengguna dapat memperoleh bantuan kendaraan
+            dengan proses yang sederhana.
+          </p>
+        </div>
+
+        <div class="steps-container">
+          <!-- Langkah 1 -->
+          <div class="step-item">
+            <span class="step-number"> 01 </span>
+            <div class="step-icon">📍</div>
+            <h3>Tentukan Lokasi</h3>
+            <p>Masukkan atau pilih lokasi kendaraan Anda.</p>
+          </div>
+          <div class="step-line"></div>
+
+          <!-- Langkah 2 -->
+          <div class="step-item">
+            <span class="step-number"> 02 </span>
+            <div class="step-icon">🔍</div>
+            <h3>Pilih Layanan</h3>
+            <p>Pilih montir, bengkel, atau bantuan darurat.</p>
+          </div>
+          <div class="step-line"></div>
+
+          <!-- Langkah 3 -->
+          <div class="step-item">
+            <span class="step-number"> 03 </span>
+            <div class="step-icon">📲</div>
+            <h3>Kirim Permintaan</h3>
+            <p>Kirim informasi masalah kendaraan Anda.</p>
+          </div>
+          <div class="step-line"></div>
+
+          <!-- Langkah 4 -->
+          <div class="step-item">
+            <span class="step-number"> 04 </span>
+            <div class="step-icon">✅</div>
+            <h3>Bantuan Datang</h3>
+            <p>Montir menerima dan membantu kendaraan Anda.</p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Keunggulan MontirQ -->
+
+    <section class="service-benefits">
+      <div class="service-benefits-container">
+        <div class="benefits-content">
+          <span class="section-label"> KEUNGGULAN MONTIRQ </span>
+
+          <h2 class="section-title">
+            Lebih Mudah,
+            <span>Lebih Cepat, Lebih Praktis</span>
+          </h2>
+
+          <p class="section-description">
+            MontirQ menyatukan berbagai kebutuhan pengguna kendaraan dalam satu
+            platform yang mudah digunakan.
+          </p>
+
+          <div class="benefits-list">
+            <div class="benefit-item">
+              <div class="benefit-icon">⚡</div>
+
+              <div>
+                <h3>Proses Cepat</h3>
+                <p>Temukan layanan sesuai kebutuhan dengan lebih praktis.</p>
+              </div>
+            </div>
+
+            <div class="benefit-item">
+              <div class="benefit-icon">📍</div>
+
+              <div>
+                <h3>Berbasis Lokasi</h3>
+                <p>Cari montir dan bengkel di sekitar lokasi pengguna.</p>
+              </div>
+            </div>
+
+            <div class="benefit-item">
+              <div class="benefit-icon">🛡️</div>
+              <div>
+                <h3>Informasi Terbuka</h3>
+                <p>Lihat profil, layanan, rating, dan ulasan.</p>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div class="benefits-visual">
+          <div class="benefits-main-card">
+            <div class="benefits-card-header">
+              <span> MontirQ </span>
+              <span class="online-status"> ● Online </span>
+            </div>
+
+            <div class="benefits-map">
+              <div class="map-road road-one"></div>
+              <div class="map-road road-two"></div>
+              <div class="map-point user-point">📍</div>
+              <div class="map-point mechanic-point">🔧</div>
+            </div>
+
+            <div class="benefits-card-bottom">
+              <div>
+                <strong> Montir Ditemukan </strong>
+                <p>Sekitar 1,2 km dari lokasi</p>
+              </div>
+
+              <span> → </span>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Call Action -->
+    <section class="services-cta">
+      <div class="services-cta-container">
+        <div class="cta-decoration cta-one"></div>
+        <div class="cta-decoration cta-two"></div>
+        <div class="services-cta-content">
+          <span class="cta-label"> MONTIRQ UNTUK SEMUA </span>
+
+          <h2>
+            Semua Kebutuhan Kendaraan
+            <span>Dimulai Dari Sini</span>
+          </h2>
+
+          <p>
+            Temukan montir, cari bengkel, gunakan bantuan darurat, dan akses
+            berbagai kebutuhan kendaraan melalui MontirQ.
+          </p>
+
+          <div class="cta-buttons">
+            <a href="#" class="cta-primary">
+              Mulai Menggunakan
+              <span>→</span>
+            </a>
+
+            <a href="About.html" class="cta-secondary"> Tentang MontirQ </a>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Footer -->
+
+    <footer class="footer">
+      <div class="footer-container">
+        <div class="footer-brand">
+          <a href="App.html" class="footer-logo">
+            <img src="assets/icons/logo-montirQ.png" alt="Logo MontirQ" />
+            <span> MontirQ </span>
+          </a>
+
+          <p>
+            Platform yang membantu pengguna menemukan montir, bengkel, dan
+            berbagai kebutuhan kendaraan dalam satu aplikasi.
+          </p>
+        </div>
+
+        <div class="footer-links">
+          <div class="footer-column">
+            <h3>MontirQ</h3>
+            <a href="App.html"> Beranda </a>
+            <a href="About.html"> About </a>
+            <a href="Services.html"> Services </a>
+          </div>
+
+          <div class="footer-column">
+            <h3>Layanan</h3>
+            <a href="#"> Cari Montir </a>
+            <a href="#"> Bantuan Darurat </a>
+            <a href="#"> Cari Bengkel </a>
+          </div>
+
+          <div class="footer-column">
+            <h3>Bantuan</h3>
+            <a href="#"> Pusat Bantuan </a>
+            <a href="#"> Hubungi Kami </a>
+            <a href="#"> FAQ </a>
+          </div>
+        </div>
+      </div>
+
+      <div class="footer-bottom">
+        <p>© 2026 MontirQ. Semua Hak Dilindungi.</p>
+
+        <div>
+          <a href="#"> Kebijakan Privasi </a>
+          <a href="#"> Syarat & Ketentuan </a>
+        </div>
+      </div>
+    </footer>
+
+    <!-- JavaScript -->
+    <script src="js/script.js"></script>
+  </body>
 </html>

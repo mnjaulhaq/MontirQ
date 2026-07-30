@@ -1,0 +1,1726 @@
+/* =========================================
+SERVICES PAGE
+========================================= */
+
+/* =========================================
+HERO SERVICES
+========================================= */
+
+.services-hero {
+position: relative;
+overflow: hidden;
+
+background:
+    radial-gradient(
+        circle at 80% 30%,
+        rgba(20, 108, 67, 0.13),
+        transparent 30%
+    ),
+    linear-gradient(
+        135deg,
+        #f5fbf7 0%,
+        #ffffff 55%,
+        #edf8f1 100%
+    );
+
+}
+
+.services-hero-container {
+width: min(92%, var(--container-width));
+min-height: 620px;
+
+margin: 0 auto;
+padding: 90px 0;
+
+display: grid;
+grid-template-columns: 1fr 1fr;
+align-items: center;
+
+gap: 80px;
+
+}
+
+.services-hero-content {
+max-width: 620px;
+}
+
+.services-hero-label {
+display: inline-flex;
+align-items: center;
+
+padding: 8px 17px;
+margin-bottom: 20px;
+
+color: var(--primary-color);
+background-color: var(--primary-light);
+
+border-radius: 50px;
+
+font-size: 12px;
+font-weight: 700;
+letter-spacing: 1px;
+
+}
+
+.services-hero-title {
+color: var(--dark-color);
+
+font-size: clamp(42px, 5vw, 64px);
+line-height: 1.12;
+letter-spacing: -2px;
+
+margin-bottom: 22px;
+
+}
+
+.services-hero-title span {
+display: block;
+
+color: var(--primary-color);
+
+}
+
+.services-hero-description {
+max-width: 560px;
+
+color: var(--text-color);
+
+font-size: 15px;
+line-height: 1.9;
+
+margin-bottom: 32px;
+
+}
+
+.services-hero-action {
+display: flex;
+align-items: center;
+flex-wrap: wrap;
+
+gap: 15px;
+
+}
+
+/* =========================================
+VISUAL HERO
+========================================= */
+
+.services-hero-visual {
+position: relative;
+
+width: 100%;
+min-height: 440px;
+
+display: flex;
+align-items: center;
+justify-content: center;
+
+}
+
+.services-hero-visual::before {
+content: "";
+
+position: absolute;
+
+width: 360px;
+height: 360px;
+
+border-radius: 50%;
+
+background:
+    linear-gradient(
+        145deg,
+        #dff4e7,
+        #b9e5c9
+    );
+
+box-shadow:
+    inset 0 0 0 20px
+    rgba(255, 255, 255, 0.4);
+
+}
+
+.services-main-circle {
+position: relative;
+z-index: 2;
+
+width: 170px;
+height: 170px;
+
+display: grid;
+place-items: center;
+
+background-color:
+    var(--white-color);
+
+border:
+    9px solid
+    rgba(255, 255, 255, 0.8);
+
+border-radius: 50%;
+
+box-shadow:
+    0 20px 50px
+    rgba(20, 108, 67, 0.2);
+
+}
+
+.services-main-circle img {
+width: 110px;
+height: 110px;
+
+object-fit: contain;
+
+border-radius: 50%;
+
+}
+
+.service-floating-card {
+position: absolute;
+z-index: 3;
+
+display: flex;
+align-items: center;
+
+gap: 12px;
+
+width: 220px;
+
+padding: 14px;
+
+background-color:
+    rgba(255, 255, 255, 0.96);
+
+border:
+    1px solid
+    rgba(20, 108, 67, 0.08);
+
+border-radius: 15px;
+
+box-shadow:
+    0 15px 35px
+    rgba(20, 108, 67, 0.12);
+
+}
+
+.emergency-card {
+top: 15px;
+left: 0;
+}
+
+.mechanic-card {
+top: 155px;
+right: 0;
+}
+
+.workshop-card {
+bottom: 15px;
+left: 25px;
+}
+
+.service-card-icon {
+width: 46px;
+height: 46px;
+
+display: grid;
+place-items: center;
+
+flex-shrink: 0;
+
+background-color:
+    var(--primary-light);
+
+border-radius: 12px;
+
+font-size: 22px;
+
+}
+
+.service-floating-card h3 {
+color: var(--dark-color);
+
+font-size: 13px;
+
+margin-bottom: 2px;
+
+}
+
+.service-floating-card p {
+color: var(--text-color);
+
+font-size: 10px;
+
+}
+
+/* =========================================
+LAYANAN UTAMA
+========================================= */
+
+.main-services {
+padding: 115px 0;
+
+background-color:
+    var(--white-color);
+
+}
+
+.main-services-container {
+width: min(92%, var(--container-width));
+
+margin: 0 auto;
+
+}
+
+.section-heading {
+max-width: 750px;
+
+margin:
+    0 auto
+    55px;
+
+text-align: center;
+
+}
+
+.section-heading
+.section-title {
+margin-right: auto;
+margin-left: auto;
+}
+
+.section-heading
+.section-description {
+max-width: 650px;
+
+margin-right: auto;
+margin-left: auto;
+
+}
+
+.services-grid {
+display: grid;
+
+grid-template-columns:
+    repeat(3, 1fr);
+
+gap: 22px;
+
+}
+
+.service-item {
+position: relative;
+
+min-height: 350px;
+
+padding: 30px;
+
+background-color:
+    var(--light-color);
+
+border:
+    1px solid
+    var(--border-color);
+
+border-radius: 21px;
+
+overflow: hidden;
+
+transition:
+    transform 0.3s ease,
+    box-shadow 0.3s ease,
+    border-color 0.3s ease;
+
+}
+
+.service-item:hover {
+transform:
+translateY(-7px);
+
+border-color:
+    rgba(20, 108, 67, 0.22);
+
+box-shadow:
+    var(--shadow-medium);
+
+}
+
+.featured-service {
+color: var(--white-color);
+
+background:
+    linear-gradient(
+        145deg,
+        var(--primary-color),
+        var(--primary-dark)
+    );
+
+border-color:
+    var(--primary-color);
+
+}
+
+.service-badge {
+position: absolute;
+
+top: 20px;
+right: 20px;
+
+padding: 6px 10px;
+
+color: var(--primary-color);
+
+background-color:
+    #dff4e7;
+
+border-radius: 50px;
+
+font-size: 8px;
+font-weight: 800;
+letter-spacing: 0.5px;
+
+}
+
+.service-item-number {
+position: absolute;
+
+top: 25px;
+right: 27px;
+
+color: #d6e3da;
+
+font-size: 24px;
+font-weight: 800;
+
+}
+
+.featured-service
+.service-item-number {
+top: 55px;
+
+color:
+    rgba(255, 255, 255, 0.22);
+
+}
+
+.service-item-icon {
+width: 62px;
+height: 62px;
+
+display: grid;
+place-items: center;
+
+margin-bottom: 23px;
+
+background-color:
+    var(--white-color);
+
+border-radius: 17px;
+
+box-shadow:
+    0 8px 20px
+    rgba(20, 108, 67, 0.08);
+
+font-size: 28px;
+
+}
+
+.service-item h3 {
+font-size: 19px;
+
+margin-bottom: 10px;
+
+}
+
+.service-item p {
+max-width: 330px;
+
+color: var(--text-color);
+
+font-size: 12px;
+line-height: 1.8;
+
+}
+
+.featured-service p {
+color:
+rgba(255, 255, 255, 0.76);
+}
+
+.service-link {
+position: absolute;
+
+right: 30px;
+bottom: 27px;
+left: 30px;
+
+display: flex;
+align-items: center;
+justify-content: space-between;
+
+padding-top: 17px;
+
+color: var(--primary-color);
+
+border-top:
+    1px solid
+    var(--border-color);
+
+font-size: 11px;
+font-weight: 700;
+
+transition:
+    gap 0.25s ease;
+
+}
+
+.service-link:hover {
+gap: 8px;
+}
+
+.featured-service
+.service-link {
+color: var(--white-color);
+
+border-color:
+    rgba(255, 255, 255, 0.2);
+
+}
+
+/* =========================================
+DETAIL LAYANAN
+========================================= */
+
+.service-details {
+padding: 115px 0;
+
+background-color:
+    var(--light-color);
+
+}
+
+.service-details-container {
+width: min(92%, var(--container-width));
+
+margin: 0 auto;
+
+display: flex;
+flex-direction: column;
+
+gap: 110px;
+
+}
+
+.service-detail-row {
+display: grid;
+
+grid-template-columns:
+    0.9fr 1.1fr;
+
+align-items: center;
+
+gap: 90px;
+
+}
+
+.service-detail-visual {
+position: relative;
+
+min-height: 460px;
+
+display: flex;
+align-items: center;
+justify-content: center;
+
+overflow: hidden;
+
+background:
+    linear-gradient(
+        145deg,
+        #eff9f3,
+        #d9f1e2
+    );
+
+border-radius: 35px;
+
+}
+
+.service-detail-visual::before {
+content: "";
+
+position: absolute;
+
+width: 310px;
+height: 310px;
+
+border-radius: 50%;
+
+background-color:
+    rgba(20, 108, 67, 0.1);
+
+}
+
+.detail-main-icon {
+position: relative;
+z-index: 1;
+
+width: 190px;
+height: 190px;
+
+display: grid;
+place-items: center;
+
+background-color:
+    var(--white-color);
+
+border-radius: 50%;
+
+box-shadow:
+    var(--shadow-medium);
+
+font-size: 88px;
+
+}
+
+.detail-location-card,
+.detail-status-card {
+position: absolute;
+
+left: 25px;
+bottom: 25px;
+
+z-index: 2;
+
+display: flex;
+align-items: center;
+
+gap: 12px;
+
+padding: 15px 18px;
+
+background-color:
+    var(--white-color);
+
+border-radius: 14px;
+
+box-shadow:
+    var(--shadow-small);
+
+}
+
+.detail-location-card > span {
+width: 44px;
+height: 44px;
+
+display: grid;
+place-items: center;
+
+background-color:
+    var(--primary-light);
+
+border-radius: 11px;
+
+font-size: 20px;
+
+}
+
+.detail-location-card strong,
+.detail-status-card strong {
+display: block;
+
+color: var(--dark-color);
+
+font-size: 13px;
+
+margin-bottom: 3px;
+
+}
+
+.detail-location-card p,
+.detail-status-card p {
+color: var(--text-color);
+
+font-size: 10px;
+
+}
+
+.emergency-visual {
+background:
+linear-gradient(
+145deg,
+#fff5f2,
+#ffe2d8
+);
+}
+
+.emergency-visual::before {
+background-color:
+rgba(234, 91, 53, 0.1);
+}
+
+.detail-status-card {
+min-width: 245px;
+}
+
+.status-dot {
+width: 12px;
+height: 12px;
+
+flex-shrink: 0;
+
+background-color:
+    #28a65a;
+
+border-radius: 50%;
+
+box-shadow:
+    0 0 0 7px
+    rgba(40, 166, 90, 0.12);
+
+}
+
+.service-detail-content
+.section-description {
+max-width: 590px;
+}
+
+.detail-list {
+list-style: none;
+
+display: grid;
+
+grid-template-columns:
+    1fr 1fr;
+
+gap: 15px;
+
+margin-top: 30px;
+
+}
+
+.detail-list li {
+display: flex;
+align-items: center;
+
+gap: 9px;
+
+color: var(--dark-color);
+
+font-size: 11px;
+font-weight: 600;
+
+}
+
+.detail-list li span {
+width: 22px;
+height: 22px;
+
+display: grid;
+place-items: center;
+
+flex-shrink: 0;
+
+color: var(--white-color);
+
+background-color:
+    var(--primary-color);
+
+border-radius: 50%;
+
+font-size: 10px;
+
+}
+
+.reverse-detail {
+grid-template-columns:
+1.1fr 0.9fr;
+}
+
+/* =========================================
+CARA MENGGUNAKAN
+========================================= */
+
+.how-it-works {
+padding: 115px 0;
+
+background-color:
+    var(--white-color);
+
+}
+
+.how-it-works-container {
+width: min(92%, var(--container-width));
+
+margin: 0 auto;
+
+}
+
+.steps-container {
+display: grid;
+
+grid-template-columns:
+    1fr auto
+    1fr auto
+    1fr auto
+    1fr;
+
+align-items: center;
+
+gap: 15px;
+
+}
+
+.step-item {
+position: relative;
+
+min-height: 270px;
+
+padding: 27px;
+
+text-align: center;
+
+background-color:
+    var(--light-color);
+
+border:
+    1px solid
+    var(--border-color);
+
+border-radius: 20px;
+
+transition:
+    transform 0.3s ease,
+    box-shadow 0.3s ease;
+
+}
+
+.step-item:hover {
+transform:
+translateY(-7px);
+
+box-shadow:
+    var(--shadow-small);
+
+}
+
+.step-number {
+position: absolute;
+
+top: 20px;
+left: 22px;
+
+color: var(--primary-color);
+
+font-size: 11px;
+font-weight: 800;
+
+}
+
+.step-icon {
+width: 65px;
+height: 65px;
+
+display: grid;
+place-items: center;
+
+margin:
+    18px auto
+    18px;
+
+background-color:
+    var(--white-color);
+
+border-radius: 18px;
+
+box-shadow:
+    0 8px 20px
+    rgba(20, 108, 67, 0.08);
+
+font-size: 28px;
+
+}
+
+.step-item h3 {
+font-size: 15px;
+
+margin-bottom: 8px;
+
+}
+
+.step-item p {
+color: var(--text-color);
+
+font-size: 11px;
+line-height: 1.7;
+
+}
+
+.step-line {
+position: relative;
+
+width: 35px;
+height: 2px;
+
+background-color:
+    #b9d8c4;
+
+}
+
+.step-line::after {
+content: "›";
+
+position: absolute;
+
+top: 50%;
+right: -4px;
+
+color: var(--primary-color);
+
+font-size: 23px;
+font-weight: 700;
+
+transform:
+    translateY(-53%);
+
+}
+
+/* =========================================
+KEUNGGULAN
+========================================= */
+
+.service-benefits {
+padding: 115px 0;
+
+background-color:
+    var(--light-color);
+
+}
+
+.service-benefits-container {
+width: min(92%, var(--container-width));
+
+margin: 0 auto;
+
+display: grid;
+
+grid-template-columns:
+    1fr 1fr;
+
+align-items: center;
+
+gap: 90px;
+
+}
+
+.benefits-content
+.section-description {
+max-width: 580px;
+}
+
+.benefits-list {
+display: flex;
+flex-direction: column;
+
+gap: 15px;
+
+margin-top: 32px;
+
+}
+
+.benefit-item {
+display: flex;
+align-items: center;
+
+gap: 15px;
+
+padding: 17px;
+
+background-color:
+    var(--white-color);
+
+border:
+    1px solid
+    var(--border-color);
+
+border-radius: 15px;
+
+transition:
+    transform 0.25s ease,
+    box-shadow 0.25s ease;
+
+}
+
+.benefit-item:hover {
+transform:
+translateX(6px);
+
+box-shadow:
+    var(--shadow-small);
+
+}
+
+.benefit-icon {
+width: 48px;
+height: 48px;
+
+display: grid;
+place-items: center;
+
+flex-shrink: 0;
+
+background-color:
+    var(--primary-light);
+
+border-radius: 13px;
+
+font-size: 22px;
+
+}
+
+.benefit-item h3 {
+font-size: 13px;
+
+margin-bottom: 4px;
+
+}
+
+.benefit-item p {
+color: var(--text-color);
+
+font-size: 10px;
+line-height: 1.6;
+
+}
+
+/* =========================================
+VISUAL KEUNGGULAN
+========================================= */
+
+.benefits-visual {
+min-height: 500px;
+
+display: flex;
+align-items: center;
+justify-content: center;
+
+}
+
+.benefits-main-card {
+width: min(100%, 420px);
+
+padding: 22px;
+
+background-color:
+    var(--white-color);
+
+border:
+    1px solid
+    var(--border-color);
+
+border-radius: 25px;
+
+box-shadow:
+    0 25px 55px
+    rgba(20, 108, 67, 0.12);
+
+}
+
+.benefits-card-header {
+display: flex;
+align-items: center;
+justify-content: space-between;
+
+margin-bottom: 18px;
+
+color: var(--dark-color);
+
+font-size: 13px;
+font-weight: 800;
+
+}
+
+.online-status {
+padding: 6px 10px;
+
+color: #208a4b;
+
+background-color:
+    #e5f7eb;
+
+border-radius: 50px;
+
+font-size: 9px;
+
+}
+
+.benefits-map {
+position: relative;
+
+height: 280px;
+
+overflow: hidden;
+
+background:
+    linear-gradient(
+        145deg,
+        #eef5f0,
+        #dcece1
+    );
+
+border-radius: 18px;
+
+}
+
+.map-road {
+position: absolute;
+
+background-color:
+    rgba(255, 255, 255, 0.9);
+
+border-radius: 50px;
+
+transform:
+    rotate(-25deg);
+
+}
+
+.road-one {
+width: 430px;
+height: 35px;
+
+top: 105px;
+left: -50px;
+
+}
+
+.road-two {
+width: 380px;
+height: 28px;
+
+top: 190px;
+left: 20px;
+
+transform:
+    rotate(35deg);
+
+}
+
+.map-point {
+position: absolute;
+
+width: 55px;
+height: 55px;
+
+display: grid;
+place-items: center;
+
+border:
+    5px solid
+    var(--white-color);
+
+border-radius: 50%;
+
+box-shadow:
+    0 8px 20px
+    rgba(20, 108, 67, 0.15);
+
+font-size: 23px;
+
+}
+
+.user-point {
+top: 70px;
+left: 65px;
+
+background-color:
+    #ffe7df;
+
+}
+
+.mechanic-point {
+right: 65px;
+bottom: 55px;
+
+background-color:
+    var(--primary-light);
+
+}
+
+.benefits-card-bottom {
+display: flex;
+align-items: center;
+justify-content: space-between;
+
+gap: 20px;
+
+padding-top: 18px;
+
+}
+
+.benefits-card-bottom strong {
+display: block;
+
+color: var(--dark-color);
+
+font-size: 13px;
+
+margin-bottom: 4px;
+
+}
+
+.benefits-card-bottom p {
+color: var(--text-color);
+
+font-size: 10px;
+
+}
+
+.benefits-card-bottom > span {
+width: 40px;
+height: 40px;
+
+display: grid;
+place-items: center;
+
+flex-shrink: 0;
+
+color: var(--white-color);
+
+background-color:
+    var(--primary-color);
+
+border-radius: 12px;
+
+font-size: 18px;
+
+}
+
+/* =========================================
+CTA SERVICES
+========================================= */
+
+.services-cta {
+padding: 100px 0;
+
+background-color:
+    var(--white-color);
+
+}
+
+.services-cta-container {
+position: relative;
+
+width: min(92%, 1100px);
+
+margin: 0 auto;
+
+padding: 75px 30px;
+
+overflow: hidden;
+
+color: var(--white-color);
+
+background:
+    linear-gradient(
+        135deg,
+        var(--primary-dark),
+        var(--primary-color)
+    );
+
+border-radius: 30px;
+
+text-align: center;
+
+box-shadow:
+    0 25px 55px
+    rgba(20, 108, 67, 0.2);
+
+}
+
+.cta-decoration {
+position: absolute;
+
+border-radius: 50%;
+
+border:
+    50px solid
+    rgba(255, 255, 255, 0.05);
+
+}
+
+.cta-one {
+width: 350px;
+height: 350px;
+
+top: -180px;
+left: -150px;
+
+}
+
+.cta-two {
+width: 400px;
+height: 400px;
+
+right: -220px;
+bottom: -250px;
+
+}
+
+.services-cta-content {
+position: relative;
+z-index: 2;
+
+max-width: 720px;
+
+margin: 0 auto;
+
+}
+
+.cta-label {
+display: inline-block;
+
+color: #a8edc1;
+
+font-size: 11px;
+font-weight: 800;
+letter-spacing: 1.5px;
+
+margin-bottom: 15px;
+
+}
+
+.services-cta-content h2 {
+font-size:
+clamp(32px, 4vw, 48px);
+
+line-height: 1.2;
+
+margin-bottom: 18px;
+
+}
+
+.services-cta-content h2 span {
+display: block;
+
+color: #b8f0ca;
+
+}
+
+.services-cta-content > p {
+max-width: 650px;
+
+margin:
+    0 auto
+    30px;
+
+color:
+    rgba(255, 255, 255, 0.75);
+
+font-size: 13px;
+line-height: 1.9;
+
+}
+
+.cta-buttons {
+display: flex;
+justify-content: center;
+flex-wrap: wrap;
+
+gap: 14px;
+
+}
+
+.cta-primary,
+.cta-secondary {
+min-height: 50px;
+
+display: inline-flex;
+align-items: center;
+justify-content: center;
+
+gap: 10px;
+
+padding: 12px 23px;
+
+border-radius: 11px;
+
+font-size: 13px;
+font-weight: 600;
+
+transition:
+    transform 0.25s ease,
+    background-color 0.25s ease;
+
+}
+
+.cta-primary {
+color: var(--primary-color);
+
+background-color:
+    var(--white-color);
+
+}
+
+.cta-primary:hover {
+transform:
+translateY(-3px);
+}
+
+.cta-secondary {
+color: var(--white-color);
+
+border:
+    1px solid
+    rgba(255, 255, 255, 0.4);
+
+}
+
+.cta-secondary:hover {
+background-color:
+rgba(255, 255, 255, 0.1);
+
+transform:
+    translateY(-3px);
+
+}
+
+/* =========================================
+RESPONSIVE SERVICES
+========================================= */
+
+@media (max-width: 1100px) {
+
+.services-hero-container,
+.service-detail-row,
+.service-benefits-container {
+    gap: 50px;
+}
+
+.services-grid {
+    grid-template-columns:
+        repeat(2, 1fr);
+}
+
+.steps-container {
+    grid-template-columns:
+        repeat(4, 1fr);
+}
+
+.step-line {
+    display: none;
+}
+
+.step-item {
+    min-height: 280px;
+}
+
+}
+
+@media (max-width: 850px) {
+
+.services-hero-container,
+.service-detail-row,
+.reverse-detail,
+.service-benefits-container {
+    grid-template-columns:
+        1fr;
+}
+
+.services-hero-content {
+    max-width: 100%;
+
+    text-align: center;
+}
+
+.services-hero-action {
+    justify-content: center;
+}
+
+.services-hero-visual {
+    max-width: 600px;
+
+    margin: 0 auto;
+}
+
+.service-detail-content {
+    text-align: center;
+}
+
+.service-detail-content
+.section-description {
+    margin-right: auto;
+    margin-left: auto;
+}
+
+.detail-list {
+    max-width: 600px;
+
+    margin-right: auto;
+    margin-left: auto;
+
+    text-align: left;
+}
+
+.reverse-detail
+.service-detail-content {
+    order: 1;
+}
+
+.reverse-detail
+.service-detail-visual {
+    order: 2;
+}
+
+.benefits-content {
+    text-align: center;
+}
+
+.benefits-content
+.section-description {
+    margin-right: auto;
+    margin-left: auto;
+}
+
+.benefits-list {
+    max-width: 650px;
+
+    margin-right: auto;
+    margin-left: auto;
+
+    text-align: left;
+}
+
+.benefits-visual {
+    min-height: auto;
+}
+
+.steps-container {
+    grid-template-columns:
+        repeat(2, 1fr);
+
+    gap: 20px;
+}
+
+}
+
+@media (max-width: 650px) {
+
+.services-hero-container {
+    min-height: auto;
+
+    padding: 70px 0;
+}
+
+.services-hero-title {
+    font-size:
+        clamp(38px, 11vw, 52px);
+}
+
+.services-hero-visual {
+    min-height: 380px;
+}
+
+.services-hero-visual::before {
+    width: 280px;
+    height: 280px;
+}
+
+.services-main-circle {
+    width: 130px;
+    height: 130px;
+}
+
+.services-main-circle img {
+    width: 85px;
+    height: 85px;
+}
+
+.service-floating-card {
+    width: 175px;
+
+    padding: 11px;
+}
+
+.emergency-card {
+    top: 0;
+    left: 0;
+}
+
+.mechanic-card {
+    top: 130px;
+    right: 0;
+}
+
+.workshop-card {
+    bottom: 0;
+    left: 5px;
+}
+
+.main-services,
+.service-details,
+.how-it-works,
+.service-benefits {
+    padding: 75px 0;
+}
+
+.services-grid {
+    grid-template-columns:
+        1fr;
+}
+
+.service-item {
+    min-height: 330px;
+}
+
+.service-details-container {
+    gap: 75px;
+}
+
+.service-detail-visual {
+    min-height: 360px;
+}
+
+.detail-main-icon {
+    width: 150px;
+    height: 150px;
+
+    font-size: 70px;
+}
+
+.detail-list {
+    grid-template-columns:
+        1fr;
+}
+
+.steps-container {
+    grid-template-columns:
+        1fr;
+}
+
+.step-item {
+    min-height: auto;
+}
+
+.benefits-main-card {
+    padding: 15px;
+}
+
+.benefits-map {
+    height: 240px;
+}
+
+.mechanic-point {
+    right: 35px;
+    bottom: 40px;
+}
+
+.services-cta {
+    padding: 70px 0;
+}
+
+.services-cta-container {
+    padding: 60px 20px;
+
+    border-radius: 22px;
+}
+
+}
+
+@media (max-width: 430px) {
+
+.services-hero-action {
+    flex-direction: column;
+}
+
+.services-hero-action
+.btn-primary,
+.services-hero-action
+.btn-secondary {
+    width: 100%;
+}
+
+.service-floating-card {
+    width: 160px;
+
+    transform:
+        scale(0.88);
+}
+
+.emergency-card {
+    transform-origin:
+        left top;
+}
+
+.mechanic-card {
+    transform-origin:
+        right center;
+}
+
+.workshop-card {
+    transform-origin:
+        left bottom;
+}
+
+.service-detail-visual {
+    min-height: 320px;
+}
+
+.detail-location-card,
+.detail-status-card {
+    left: 15px;
+    bottom: 15px;
+
+    transform:
+        scale(0.88);
+
+    transform-origin:
+        left bottom;
+}
+
+.detail-status-card {
+    min-width: 220px;
+}
+
+.service-item {
+    padding: 25px;
+}
+
+.service-link {
+    right: 25px;
+    left: 25px;
+}
+
+.benefit-item {
+    align-items: flex-start;
+}
+
+.benefits-map {
+    height: 210px;
+}
+
+.map-point {
+    width: 48px;
+    height: 48px;
+
+    font-size: 20px;
+}
+
+.user-point {
+    top: 50px;
+    left: 40px;
+}
+
+.mechanic-point {
+    right: 25px;
+    bottom: 30px;
+}
+
+.cta-buttons {
+    flex-direction: column;
+}
+
+.cta-primary,
+.cta-secondary {
+    width: 100%;
+}
+
+}

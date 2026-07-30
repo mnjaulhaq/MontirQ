@@ -1,5 +1,1083 @@
+/* =========================================
+GOOGLE FONT
+========================================= */
+
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700;800&display=swap");
+
+/* =========================================
+PENGATURAN DASAR
+========================================= */
+
+:root {
+  --primary-color: #146c43;
+  --primary-dark: #0d4d30;
+  --primary-light: #e7f5ed;
+  --secondary-color: #f4b942;
+  --dark-color: #17221d;
+  --text-color: #5f6b64;
+  --light-color: #f6f8f7;
+  --white-color: #ffffff;
+  --border-color: #e2e8e4;
+  --shadow-small: 0 8px 25px rgba(16, 65, 41, 0.08);
+  --shadow-medium: 0 18px 45px rgba(16, 65, 41, 0.12);
+  --border-radius: 16px;
+  --container-width: 1200px;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  font-family: "Poppins", Arial, sans-serif;
+  background-color: var(--white-color);
+  color: var(--dark-color);
+  line-height: 1.6;
+  overflow-x: hidden;
+}
+
+a {
+  color: inherit;
+  text-decoration: none;
+}
+
+img {
+  display: block;
+  max-width: 100%;
+}
+
+button {
+  border: none;
+  outline: none;
+  background: none;
+  cursor: pointer;
+  font-family: inherit;
+}
+
+/* =========================================
+HEADER
+========================================= */
+
+.header {
+  background-color: var(--primary-dark);
+  color: var(--white-color);
+}
+
+.header-container {
+  width: min(92%, var(--container-width));
+  min-height: 42px;
+  margin: 0 auto;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 20px;
+}
+
+.header-text {
+  font-size: 12px;
+  color: rgba(255, 255, 255, 0.9);
+}
+
+.header-contact {
+  display: flex;
+  align-items: center;
+  gap: 20px;
+  font-size: 12px;
+  color: rgba(255, 255, 255, 0.9);
+}
+
+/* =========================================
+NAVBAR
+========================================= */
+
+.navbar {
+  position: sticky;
+  top: 0;
+  z-index: 1000;
+  background-color: rgba(255, 255, 255, 0.96);
+  border-bottom: 1px solid var(--border-color);
+  backdrop-filter: blur(12px);
+}
+
+.navbar-container {
+  width: min(92%, var(--container-width));
+  height: 78px;
+  margin: 0 auto;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 30px;
+}
+
+/* Logo */
+
+.navbar-logo {
+  display: flex;
+  align-items: center;
+  flex-shrink: 0;
+}
+
 .logo-image {
-    width: 50px;
-    height: 50px;
-    object-fit: contain;
+  width: 54px;
+  height: 54px;
+  object-fit: contain;
+}
+
+/* Menu Navigasi */
+
+.navbar-menu {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 34px;
+  margin-left: auto;
+}
+
+.nav-link {
+  position: relative;
+  color: var(--text-color);
+  font-size: 14px;
+  font-weight: 500;
+  transition: color 0.25s ease;
+}
+
+.nav-link:hover,
+.nav-link.active {
+  color: var(--primary-color);
+}
+
+.nav-link::after {
+  content: "";
+  position: absolute;
+  left: 0;
+  bottom: -9px;
+  width: 0;
+  height: 2px;
+  background-color: var(--primary-color);
+  border-radius: 20px;
+  transition: width 0.25s ease;
+}
+
+.nav-link:hover::after,
+.nav-link.active::after {
+  width: 100%;
+}
+
+/* Tombol Masuk */
+
+.navbar-action {
+  margin-left: 10px;
+}
+
+.btn-login {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  min-width: 105px;
+  min-height: 43px;
+  padding: 10px 22px;
+  color: var(--white-color);
+  background-color: var(--primary-color);
+  border-radius: 10px;
+  font-size: 14px;
+  font-weight: 600;
+  box-shadow: 0 8px 18px rgba(20, 108, 67, 0.2);
+  transition:
+    transform 0.25s ease,
+    background-color 0.25s ease,
+    box-shadow 0.25s ease;
+}
+
+.btn-login:hover {
+  background-color: var(--primary-dark);
+  transform: translateY(-2px);
+  box-shadow: 0 12px 24px rgba(20, 108, 67, 0.28);
+}
+
+/* Tombol Menu Mobile */
+
+.menu-toggle {
+  display: none;
+  color: var(--dark-color);
+  font-size: 28px;
+}
+
+/* =========================================
+HERO SECTION
+========================================= */
+
+.hero {
+  position: relative;
+  min-height: 650px;
+  display: flex;
+  align-items: center;
+  overflow: hidden;
+  background:
+    radial-gradient(
+      circle at 80% 35%,
+      rgba(70, 180, 112, 0.15),
+      transparent 30%
+    ),
+    linear-gradient(135deg, #f7fbf8 0%, #ffffff 55%, #eef8f2 100%);
+}
+
+.hero::before {
+  content: "";
+  position: absolute;
+  top: -160px;
+  right: -150px;
+  width: 450px;
+  height: 450px;
+  border-radius: 50%;
+  background-color: rgba(20, 108, 67, 0.05);
+}
+
+.hero-container {
+  position: relative;
+  z-index: 1;
+  width: min(92%, var(--container-width));
+  margin: 0 auto;
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  align-items: center;
+  gap: 70px;
+  padding: 90px 0;
+}
+
+/* Isi Hero */
+
+.hero-content {
+  max-width: 620px;
+}
+
+.hero-label {
+  display: inline-flex;
+  align-items: center;
+  padding: 8px 16px;
+  color: var(--primary-color);
+  background-color: var(--primary-light);
+  border-radius: 50px;
+  font-size: 13px;
+  font-weight: 600;
+  margin-bottom: 20px;
+}
+
+.hero-title {
+  max-width: 650px;
+  color: var(--dark-color);
+  font-size: clamp(40px, 5vw, 66px);
+  line-height: 1.12;
+  letter-spacing: -2px;
+  margin-bottom: 22px;
+}
+
+.hero-title span {
+  display: block;
+  color: var(--primary-color);
+}
+
+.hero-description {
+  max-width: 550px;
+  color: var(--text-color);
+  font-size: 16px;
+  line-height: 1.8;
+  margin-bottom: 32px;
+}
+
+/* Tombol Hero */
+
+.hero-action {
+  display: flex;
+  align-items: center;
+  flex-wrap: wrap;
+  gap: 15px;
+}
+
+.btn-primary,
+.btn-secondary {
+  min-height: 52px;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  gap: 12px;
+  padding: 13px 24px;
+  border-radius: 12px;
+  font-size: 14px;
+  font-weight: 600;
+  transition:
+    transform 0.25s ease,
+    box-shadow 0.25s ease,
+    background-color 0.25s ease;
+}
+
+.btn-primary {
+  color: var(--white-color);
+  background-color: var(--primary-color);
+  box-shadow: 0 12px 25px rgba(20, 108, 67, 0.25);
+}
+
+.btn-primary:hover {
+  background-color: var(--primary-dark);
+  transform: translateY(-3px);
+  box-shadow: 0 16px 30px rgba(20, 108, 67, 0.3);
+}
+
+.btn-secondary {
+  color: var(--primary-color);
+  background-color: var(--white-color);
+  border: 1px solid var(--border-color);
+}
+
+.btn-secondary:hover {
+  transform: translateY(-3px);
+  border-color: var(--primary-color);
+  box-shadow: var(--shadow-small);
+}
+
+/* Visual Hero */
+
+.hero-visual {
+  position: relative;
+  min-height: 470px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.vehicle-illustration {
+  width: min(100%, 420px);
+  height: 360px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border-radius: 45% 55% 50% 50%;
+  background: linear-gradient(145deg, #dff3e7, #bde8ce);
+  box-shadow:
+    inset 0 0 0 18px rgba(255, 255, 255, 0.4),
+    0 25px 60px rgba(20, 108, 67, 0.15);
+}
+
+.vehicle-icon {
+  font-size: 150px;
+  filter: drop-shadow(0 18px 15px rgba(0, 0, 0, 0.12));
+}
+
+/* Card Bantuan */
+
+.help-card {
+  position: absolute;
+  top: 25px;
+  left: 0;
+  display: flex;
+  align-items: center;
+  gap: 13px;
+  width: 230px;
+  padding: 16px;
+  background-color: var(--white-color);
+  border: 1px solid rgba(20, 108, 67, 0.08);
+  border-radius: 16px;
+  box-shadow: var(--shadow-medium);
+}
+
+.help-icon {
+  width: 45px;
+  height: 45px;
+  display: grid;
+  place-items: center;
+  background-color: #fff1ef;
+  border-radius: 12px;
+  font-size: 22px;
+}
+
+.help-card h3 {
+  font-size: 14px;
+}
+
+.help-card p {
+  color: var(--text-color);
+  font-size: 11px;
+}
+
+/* Card Montir */
+
+.montir-card {
+  position: absolute;
+  right: -5px;
+  bottom: 30px;
+  width: 280px;
+  display: flex;
+  align-items: center;
+  gap: 12px;
+  padding: 16px;
+  background-color: var(--white-color);
+  border: 1px solid rgba(20, 108, 67, 0.08);
+  border-radius: 16px;
+  box-shadow: var(--shadow-medium);
+}
+
+.montir-avatar {
+  width: 48px;
+  height: 48px;
+  display: grid;
+  place-items: center;
+  flex-shrink: 0;
+  background-color: var(--primary-light);
+  border-radius: 50%;
+  font-size: 25px;
+}
+
+.montir-card h4 {
+  font-size: 13px;
+}
+
+.montir-card p {
+  color: var(--text-color);
+  font-size: 11px;
+}
+
+.montir-status {
+  margin-left: auto;
+  color: #1d9a58;
+  font-size: 10px;
+  font-weight: 600;
+}
+
+/* =========================================
+TENTANG MONTIRQ
+========================================= */
+
+.about-preview {
+  padding: 110px 0;
+  background-color: var(--white-color);
+}
+
+.about-container {
+  width: min(92%, var(--container-width));
+  margin: 0 auto;
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  align-items: center;
+  gap: 90px;
+}
+
+/* Visual About */
+
+.about-visual {
+  position: relative;
+  min-height: 430px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background: linear-gradient(145deg, #f0faf4, #dff3e7);
+  border-radius: 35px;
+  overflow: hidden;
+}
+
+.about-visual::before {
+  content: "";
+  position: absolute;
+  width: 280px;
+  height: 280px;
+  border-radius: 50%;
+  background-color: rgba(20, 108, 67, 0.1);
+}
+
+.about-icon {
+  position: relative;
+  z-index: 1;
+  width: 190px;
+  height: 190px;
+  display: grid;
+  place-items: center;
+  background-color: var(--white-color);
+  border-radius: 50%;
+  box-shadow: var(--shadow-medium);
+  font-size: 90px;
+}
+
+.about-card {
+  position: absolute;
+  left: 25px;
+  bottom: 25px;
+  display: flex;
+  align-items: center;
+  gap: 12px;
+  padding: 15px 18px;
+  background-color: var(--white-color);
+  border-radius: 14px;
+  box-shadow: var(--shadow-small);
+}
+
+.about-card-icon {
+  width: 42px;
+  height: 42px;
+  display: grid;
+  place-items: center;
+  background-color: var(--primary-light);
+  border-radius: 11px;
+}
+
+.about-card h3 {
+  font-size: 13px;
+}
+
+.about-card p {
+  color: var(--text-color);
+  font-size: 11px;
+}
+
+/* Konten About */
+
+.section-label {
+  display: inline-block;
+  color: var(--primary-color);
+  font-size: 12px;
+  font-weight: 700;
+  letter-spacing: 1.5px;
+  margin-bottom: 12px;
+}
+
+.section-title {
+  max-width: 600px;
+  color: var(--dark-color);
+  font-size: clamp(30px, 4vw, 45px);
+  line-height: 1.2;
+  margin-bottom: 18px;
+}
+
+.section-description {
+  color: var(--text-color);
+  font-size: 14px;
+  line-height: 1.9;
+  margin-bottom: 15px;
+}
+
+/* Keunggulan */
+
+.about-feature {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 16px;
+  margin: 28px 0;
+}
+
+.feature-item {
+  display: flex;
+  align-items: flex-start;
+  gap: 12px;
+  padding: 16px;
+  background-color: var(--light-color);
+  border: 1px solid var(--border-color);
+  border-radius: 14px;
+}
+
+.feature-icon {
+  width: 40px;
+  height: 40px;
+  display: grid;
+  place-items: center;
+  flex-shrink: 0;
+  background-color: var(--white-color);
+  border-radius: 10px;
+}
+
+.feature-item h4 {
+  font-size: 13px;
+  margin-bottom: 3px;
+}
+
+.feature-item p {
+  color: var(--text-color);
+  font-size: 11px;
+  line-height: 1.5;
+}
+
+/* Tombol About */
+
+.btn-about {
+  display: inline-flex;
+  align-items: center;
+  gap: 10px;
+  padding: 13px 22px;
+  color: var(--white-color);
+  background-color: var(--primary-color);
+  border-radius: 11px;
+  font-size: 13px;
+  font-weight: 600;
+  transition:
+    transform 0.25s ease,
+    background-color 0.25s ease;
+}
+
+.btn-about:hover {
+  background-color: var(--primary-dark);
+  transform: translateY(-3px);
+}
+
+/* =========================================
+LAYANAN MONTIRQ
+========================================= */
+
+.services-preview {
+  padding: 110px 0;
+  background-color: var(--light-color);
+}
+
+.services-container {
+  width: min(92%, var(--container-width));
+  margin: 0 auto;
+}
+
+.services-heading {
+  max-width: 700px;
+  margin: 0 auto 50px;
+  text-align: center;
+}
+
+.services-heading .section-title {
+  margin-right: auto;
+  margin-left: auto;
+}
+
+.services-heading .section-description {
+  max-width: 620px;
+  margin-right: auto;
+  margin-left: auto;
+}
+
+/* Daftar Layanan */
+
+.services-list {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 25px;
+}
+
+.service-card {
+  position: relative;
+  min-height: 340px;
+  padding: 30px;
+  background-color: var(--white-color);
+  border: 1px solid var(--border-color);
+  border-radius: 20px;
+  overflow: hidden;
+  transition:
+    transform 0.3s ease,
+    box-shadow 0.3s ease,
+    border-color 0.3s ease;
+}
+
+.service-card:hover {
+  transform: translateY(-8px);
+  border-color: rgba(20, 108, 67, 0.25);
+  box-shadow: var(--shadow-medium);
+}
+
+.service-icon {
+  width: 60px;
+  height: 60px;
+  display: grid;
+  place-items: center;
+  margin-bottom: 25px;
+  background-color: var(--primary-light);
+  border-radius: 16px;
+  font-size: 28px;
+}
+
+.service-number {
+  position: absolute;
+  top: 30px;
+  right: 30px;
+  color: #d7e2dc;
+  font-size: 25px;
+  font-weight: 800;
+}
+
+.service-card h3 {
+  font-size: 20px;
+  margin-bottom: 12px;
+}
+
+.service-card p {
+  color: var(--text-color);
+  font-size: 13px;
+  line-height: 1.8;
+  margin-bottom: 25px;
+}
+
+.service-link {
+  position: absolute;
+  left: 30px;
+  bottom: 28px;
+  display: inline-flex;
+  align-items: center;
+  gap: 8px;
+  color: var(--primary-color);
+  font-size: 13px;
+  font-weight: 600;
+}
+
+.service-link span {
+  transition: transform 0.25s ease;
+}
+
+.service-link:hover span {
+  transform: translateX(5px);
+}
+
+/* Tombol Services */
+
+.services-action {
+  display: flex;
+  justify-content: center;
+  margin-top: 40px;
+}
+
+.btn-services {
+  display: inline-flex;
+  align-items: center;
+  gap: 10px;
+  padding: 14px 24px;
+  color: var(--white-color);
+  background-color: var(--primary-color);
+  border-radius: 11px;
+  font-size: 13px;
+  font-weight: 600;
+  transition:
+    transform 0.25s ease,
+    background-color 0.25s ease;
+}
+
+.btn-services:hover {
+  background-color: var(--primary-dark);
+  transform: translateY(-3px);
+}
+
+/* =========================================
+FOOTER
+========================================= */
+
+.footer {
+  color: rgba(255, 255, 255, 0.75);
+  background-color: #10251a;
+}
+
+.footer-container {
+  width: min(92%, var(--container-width));
+  margin: 0 auto;
+  display: grid;
+  grid-template-columns: 1.6fr 1fr 1fr 1.1fr;
+  gap: 50px;
+  padding: 75px 0 55px;
+}
+
+.footer-brand {
+  max-width: 350px;
+}
+
+.footer-logo {
+  display: inline-flex;
+  margin-bottom: 18px;
+}
+
+.footer-logo-image {
+  width: 65px;
+  height: 65px;
+  object-fit: contain;
+}
+
+.footer-brand p {
+  font-size: 12px;
+  line-height: 1.9;
+}
+
+.footer-menu,
+.footer-contact {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  gap: 10px;
+}
+
+.footer-menu h3,
+.footer-contact h3 {
+  color: var(--white-color);
+  font-size: 14px;
+  margin-bottom: 8px;
+}
+
+.footer-menu a,
+.footer-contact p {
+  font-size: 12px;
+  transition: color 0.2s ease;
+}
+
+.footer-menu a:hover {
+  color: #75d49c;
+}
+
+.footer-bottom {
+  width: min(92%, var(--container-width));
+  min-height: 65px;
+  margin: 0 auto;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 20px;
+  border-top: 1px solid rgba(255, 255, 255, 0.1);
+}
+
+.footer-bottom p {
+  font-size: 11px;
+}
+
+/* =========================================
+RESPONSIVE TABLET
+========================================= */
+
+@media (max-width: 1000px) {
+  .hero-container,
+  .about-container {
+    gap: 45px;
+  }
+
+  .services-list {
+    grid-template-columns: repeat(2, 1fr);
+  }
+
+  .service-card:last-child {
+    grid-column: 1 / -1;
+    width: calc(50% - 12px);
+    justify-self: center;
+  }
+
+  .footer-container {
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
+
+/* =========================================
+RESPONSIVE MOBILE
+========================================= */
+
+@media (max-width: 768px) {
+  /* Header */
+
+  .header-container {
+    min-height: auto;
+    padding: 9px 0;
+    justify-content: center;
+    text-align: center;
+  }
+
+  .header-contact {
+    display: none;
+  }
+
+  /* Navbar */
+
+  .navbar-container {
+    height: 68px;
+  }
+
+  .logo-image {
+    width: 47px;
+    height: 47px;
+  }
+
+  .navbar-menu,
+  .navbar-action {
+    display: none;
+  }
+
+  .menu-toggle {
+    display: block;
+    margin-left: auto;
+  }
+
+  /* Hero */
+
+  .hero {
+    min-height: auto;
+  }
+
+  .hero-container {
+    grid-template-columns: 1fr;
+    gap: 45px;
+    padding: 65px 0;
+  }
+
+  .hero-content {
+    text-align: center;
+  }
+
+  .hero-label {
+    margin-bottom: 15px;
+  }
+
+  .hero-title {
+    font-size: clamp(37px, 11vw, 54px);
+    letter-spacing: -1.5px;
+  }
+
+  .hero-description {
+    margin-right: auto;
+    margin-left: auto;
+    font-size: 14px;
+  }
+
+  .hero-action {
+    justify-content: center;
+  }
+
+  .hero-visual {
+    min-height: 360px;
+  }
+
+  .vehicle-illustration {
+    width: 300px;
+    height: 275px;
+  }
+
+  .vehicle-icon {
+    font-size: 110px;
+  }
+
+  .help-card {
+    top: 5px;
+    left: 0;
+    width: 205px;
+    padding: 12px;
+  }
+
+  .montir-card {
+    right: 0;
+    bottom: 5px;
+    width: 235px;
+    padding: 12px;
+  }
+
+  /* About */
+
+  .about-preview,
+  .services-preview {
+    padding: 75px 0;
+  }
+
+  .about-container {
+    grid-template-columns: 1fr;
+
+    gap: 45px;
+  }
+
+  .about-visual {
+    min-height: 350px;
+  }
+
+  .about-icon {
+    width: 150px;
+    height: 150px;
+    font-size: 70px;
+  }
+
+  .section-title {
+    font-size: 32px;
+  }
+
+  .about-content {
+    text-align: center;
+  }
+
+  .about-feature {
+    text-align: left;
+  }
+
+  /* Services */
+
+  .services-list {
+    grid-template-columns: 1fr;
+  }
+
+  .service-card:last-child {
+    grid-column: auto;
+    width: 100%;
+  }
+
+  /* Footer */
+
+  .footer-container {
+    grid-template-columns: 1fr;
+    gap: 35px;
+    padding: 60px 0 40px;
+  }
+
+  .footer-brand {
+    max-width: 100%;
+  }
+
+  .footer-bottom {
+    min-height: auto;
+    flex-direction: column;
+    padding: 20px 0;
+    text-align: center;
+  }
+}
+
+/* =========================================
+RESPONSIVE HP KECIL
+========================================= */
+
+@media (max-width: 480px) {
+  .hero-action {
+    flex-direction: column;
+  }
+
+  .btn-primary,
+  .btn-secondary {
+    width: 100%;
+  }
+
+  .hero-visual {
+    min-height: 315px;
+  }
+
+  .vehicle-illustration {
+    width: 250px;
+    height: 230px;
+  }
+
+  .vehicle-icon {
+    font-size: 90px;
+  }
+
+  .help-card {
+    width: 185px;
+    transform: scale(0.9);
+    transform-origin: left top;
+  }
+
+  .montir-card {
+    width: 215px;
+    transform: scale(0.9);
+    transform-origin: right bottom;
+  }
+
+  .about-feature {
+    grid-template-columns: 1fr;
+  }
+
+  .service-card {
+    min-height: 320px;
+    padding: 25px;
+  }
+
+  .service-link {
+    left: 25px;
+  }
 }

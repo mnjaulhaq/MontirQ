@@ -1,345 +1,342 @@
 <!doctype html>
-<html lang="id">
+<html lang="en">
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-
-    <title>Masuk - MontirQ</title>
-
-    <!-- CSS Global -->
+    <title>MontirQ</title>
     <link rel="stylesheet" href="css/style.css" />
-
-    <!-- CSS Khusus Login -->
-    <link rel="stylesheet" href="css/login.css" />
+    <link rel="stylesheet" href="css/about.css" />
   </head>
-
   <body>
-    <!-- ================================
-         HALAMAN LOGIN MONTIRQ
-    ================================= -->
+    <!-- Header -->
+    <header class="header">
+      <div class="header-container">
+        <p class="header-text">
+          Solusi kendaraan Anda, kapan pun dan di mana pun.
+        </p>
 
-    <main class="auth-page">
-      <!-- ================================
-             BAGIAN KIRI
-             INFORMASI MONTIRQ
-        ================================= -->
+        <div class="header-contact">
+          <span>📞 0800-123-456</span>
 
-      <section class="auth-introduction">
-        <a href="index.html" class="auth-logo">
-          <img src="assets/icons/logo-montirQ.jpeg" alt="Logo MontirQ" />
+          <span>✉ support@montirq.com</span>
+        </div>
+      </div>
+    </header>
 
-          <span>Montir<span>Q</span></span>
+    <!-- Navbar -->
+    <nav class="navbar">
+      <div class="navbar-container">
+        <!-- Logo MontirQ -->
+        <a href="App.html" class="navbar-logo">
+          <img
+            src="assets/icons/logo-montirQ.png"
+            alt="Logo MontirQ"
+            class="logo-image"
+          />
         </a>
 
-        <div class="auth-introduction-content">
-          <span class="auth-label"> PLATFORM LAYANAN OTOMOTIF </span>
+        <!-- Menu Navigasi -->
+        <div class="navbar-menu">
+          <a href="App.html" class="nav-link active"> Beranda </a>
+          <a href="About.html" class="nav-link"> About </a>
+          <a href="Services.html" class="nav-link"> Services </a>
+        </div>
 
-          <h1>
-            Solusi Kendaraan
-            <span>Lebih Cepat</span>
-            dan Mudah
+        <!-- Tombol Masuk -->
+        <div class="navbar-action">
+          <a href="pages/auth/login.html" class="btn-login"> Masuk </a>
+        </div>
+
+        <!-- Tombol Menu untuk Tampilan HP -->
+        <button class="menu-toggle" type="button" aria-label="Buka menu">
+          ☰
+        </button>
+      </div>
+    </nav>
+
+    <!-- Hero Section -->
+    <section class="hero">
+      <div class="hero-container">
+        <!-- Informasi Utama -->
+        <div class="hero-content">
+          <span class="hero-label"> 🔧 Solusi Kendaraan Anda </span>
+
+          <h1 class="hero-title">
+            Montir Terdekat,
+            <span>Bantuan Lebih Cepat</span>
           </h1>
 
+          <p class="hero-description">
+            Temukan montir terpercaya untuk membantu masalah kendaraan Anda
+            kapan pun dan di mana pun.
+          </p>
+
+          <!-- Tombol Hero -->
+          <div class="hero-action">
+            <a href="pages/auth/daftar.html" class="btn-primary">
+              Mulai Sekarang
+
+              <span> → </span>
+            </a>
+
+            <a href="About.html" class="btn-secondary"> Pelajari MontirQ </a>
+          </div>
+        </div>
+
+        <!-- Visual Hero -->
+        <div class="hero-visual">
+          <!-- Ilustrasi Kendaraan -->
+          <div class="vehicle-illustration">
+            <span class="vehicle-icon"> 🛵 </span>
+          </div>
+
+          <!-- Informasi Bantuan -->
+          <div class="help-card">
+            <div class="help-icon">🚨</div>
+
+            <div>
+              <h3>Butuh Bantuan?</h3>
+
+              <p>Montir siap membantu</p>
+            </div>
+          </div>
+
+          <!-- Informasi Montir -->
+          <div class="montir-card">
+            <div class="montir-avatar">👨‍🔧</div>
+
+            <div>
+              <h4>Budi Montir</h4>
+
+              <p>⭐ 4.9 • 1,2 km</p>
+            </div>
+
+            <span class="montir-status"> ● Online </span>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Tentang MontirQ -->
+    <section class="about-preview">
+      <div class="about-container">
+        <!-- Visual MontirQ -->
+        <div class="about-visual">
+          <div class="about-icon">🔧</div>
+
+          <div class="about-card">
+            <span class="about-card-icon"> 📍 </span>
+
+            <div>
+              <h3>Montir Terdekat</h3>
+              <p>Siap membantu Anda</p>
+            </div>
+          </div>
+        </div>
+
+        <!-- Informasi Tentang MontirQ -->
+        <div class="about-content">
+          <span class="section-label"> TENTANG MONTIRQ </span>
+
+          <h2 class="section-title">Solusi kendaraan dalam satu aplikasi</h2>
+
+          <p class="section-description">
+            MontirQ adalah platform yang menghubungkan pelanggan dengan montir,
+            bengkel, dan penjual kebutuhan kendaraan dalam satu ekosistem.
+          </p>
+
+          <p class="section-description">
+            Mulai dari bantuan saat kendaraan bermasalah, booking servis, hingga
+            mencari kebutuhan kendaraan, semuanya dapat dilakukan dengan lebih
+            mudah melalui MontirQ.
+          </p>
+
+          <!-- Keunggulan -->
+          <div class="about-feature">
+            <div class="feature-item">
+              <span class="feature-icon"> 📍 </span>
+
+              <div>
+                <h4>Montir Terdekat</h4>
+
+                <p>Temukan montir berdasarkan lokasi.</p>
+              </div>
+            </div>
+
+            <div class="feature-item">
+              <span class="feature-icon"> ⚡ </span>
+
+              <div>
+                <h4>Bantuan Lebih Cepat</h4>
+
+                <p>Kirim permintaan bantuan dengan mudah.</p>
+              </div>
+            </div>
+          </div>
+
+          <!-- Tombol Menuju About -->
+          <a href="About.html" class="btn-about">
+            Kenali MontirQ Lebih Lanjut
+
+            <span> → </span>
+          </a>
+        </div>
+      </div>
+    </section>
+
+    <!-- Layanan MontirQ -->
+    <section class="services-preview">
+      <div class="services-container">
+        <!-- Judul Bagian -->
+        <div class="services-heading">
+          <span class="section-label"> LAYANAN MONTIRQ </span>
+
+          <h2 class="section-title">
+            Semua kebutuhan kendaraan dalam satu tempat
+          </h2>
+
+          <p class="section-description">
+            MontirQ menyediakan berbagai layanan untuk membantu kebutuhan
+            kendaraan Anda dengan lebih mudah, cepat, dan praktis.
+          </p>
+        </div>
+
+        <!-- Daftar Layanan -->
+        <div class="services-list">
+          <!-- Card 1: Bantuan Darurat -->
+          <article class="service-card">
+            <div class="service-icon">🚨</div>
+
+            <span class="service-number"> 01 </span>
+
+            <h3>MontirQ Rescue</h3>
+
+            <p>
+              Dapatkan bantuan montir ketika kendaraan mengalami masalah di
+              tengah perjalanan.
+            </p>
+
+            <a href="Services.html" class="service-link">
+              Lihat Layanan
+
+              <span> → </span>
+            </a>
+          </article>
+
+          <!-- Card 2: Booking Servis -->
+          <article class="service-card">
+            <div class="service-icon">🔧</div>
+
+            <span class="service-number"> 02 </span>
+
+            <h3>Booking Servis</h3>
+
+            <p>
+              Atur jadwal servis dengan montir atau bengkel pilihan sesuai
+              kebutuhan Anda.
+            </p>
+
+            <a href="Services.html" class="service-link">
+              Lihat Layanan
+
+              <span> → </span>
+            </a>
+          </article>
+
+          <!-- Card 3: Marketplace -->
+          <article class="service-card">
+            <div class="service-icon">🛒</div>
+
+            <span class="service-number"> 03 </span>
+
+            <h3>MontirQ Market</h3>
+
+            <p>
+              Temukan produk dan spare part kendaraan dengan mudah melalui
+              MontirQ Market.
+            </p>
+
+            <a href="Services.html" class="service-link">
+              Lihat Layanan
+
+              <span> → </span>
+            </a>
+          </article>
+        </div>
+
+        <!-- Tombol ke Halaman Services -->
+        <div class="services-action">
+          <a href="Services.html" class="btn-services">
+            Lihat Semua Layanan
+
+            <span> → </span>
+          </a>
+        </div>
+      </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer">
+      <div class="footer-container">
+        <!-- Informasi MontirQ -->
+        <div class="footer-brand">
+          <a href="App.html" class="footer-logo">
+            <img
+              src="assets/icons/logo-montirQ.png"
+              alt="Logo MontirQ"
+              class="footer-logo-image"
+            />
+          </a>
+
           <p>
-            Temukan montir, bengkel, dan layanan bantuan kendaraan sesuai
-            kebutuhan Anda melalui satu platform.
-          </p>
-
-          <div class="auth-feature-list">
-            <div class="auth-feature">
-              <div class="auth-feature-icon">🔧</div>
-
-              <div>
-                <h3>Montir Terpercaya</h3>
-
-                <p>Temukan montir sesuai lokasi dan kebutuhan.</p>
-              </div>
-            </div>
-
-            <div class="auth-feature">
-              <div class="auth-feature-icon">📍</div>
-
-              <div>
-                <h3>Lokasi Lebih Mudah</h3>
-
-                <p>Cari bantuan kendaraan di sekitar Anda.</p>
-              </div>
-            </div>
-
-            <div class="auth-feature">
-              <div class="auth-feature-icon">🚨</div>
-
-              <div>
-                <h3>Bantuan Darurat</h3>
-
-                <p>Dapatkan bantuan ketika kendaraan bermasalah.</p>
-              </div>
-            </div>
-          </div>
-        </div>
-
-        <div class="auth-decoration auth-decoration-one"></div>
-
-        <div class="auth-decoration auth-decoration-two"></div>
-      </section>
-
-      <!-- ================================
-             BAGIAN KANAN
-             FORM LOGIN DAN DAFTAR
-        ================================= -->
-
-      <section class="auth-form-section">
-        <!-- Tombol Kembali -->
-
-        <a href="index.html" class="back-home"> ← Kembali ke Beranda </a>
-
-<!-- Form Login -->
-
-        <div class="auth-form-container" id="loginForm">
-          <div class="auth-form-header">
-            <span class="form-small-title"> SELAMAT DATANG </span>
-
-            <h2>Masuk ke MontirQ</h2>
-
-            <p>Masuk untuk menemukan layanan kendaraan yang Anda butuhkan.</p>
-          </div>
-
-          <form action="#" class="auth-form">
-            <div class="form-group">
-              <label for="loginEmail"> Email atau Nomor HP </label>
-
-              <div class="input-container">
-                <span class="input-icon"> 👤 </span>
-
-                <input
-                  type="text"
-                  id="loginEmail"
-                  placeholder="Masukkan email atau nomor HP"
-                />
-              </div>
-            </div>
-
-            <div class="form-group">
-              <label for="loginPassword"> Kata Sandi </label>
-
-              <div class="input-container">
-                <span class="input-icon"> 🔒 </span>
-
-                <input
-                  type="password"
-                  id="loginPassword"
-                  placeholder="Masukkan kata sandi"
-                />
-
-                <button
-                  type="button"
-                  class="show-password"
-                  aria-label="Tampilkan kata sandi"
-                >
-                  👁
-                </button>
-              </div>
-            </div>
-
-            <div class="form-options">
-              <label class="remember-me">
-                <input type="checkbox" />
-
-                <span> Ingat saya </span>
-              </label>
-
-              <a href="#" class="forgot-password"> Lupa kata sandi? </a>
-            </div>
-
-            <button type="submit" class="auth-submit-button">
-              Masuk ke MontirQ
-              <span>→</span>
-            </button>
-          </form>
-
-          <div class="auth-divider">
-            <span> atau </span>
-          </div>
-
-          <button type="button" class="google-login">
-            <span class="google-icon"> G </span>
-
-            Lanjutkan dengan Google
-          </button>
-
-          <p class="change-form-text">
-            Belum memiliki akun?
-
-            <button type="button" class="change-form-button" id="showRegister">
-              Daftar sekarang
-            </button>
+            MontirQ membantu Anda menemukan montir, bengkel, dan kebutuhan
+            kendaraan dengan lebih mudah, cepat, dan praktis.
           </p>
         </div>
 
-<!-- Form Daftar -->
+        <!-- Navigasi Cepat -->
+        <div class="footer-menu">
+          <h3>Navigasi</h3>
 
-        <div class="auth-form-container hidden-form" id="registerForm">
-          <div class="auth-form-header">
-            <span class="form-small-title"> BUAT AKUN BARU </span>
+          <a href="App.html"> Beranda </a>
 
-            <h2>Bergabung dengan MontirQ</h2>
+          <a href="About.html"> About </a>
 
-            <p>Pilih peran dan mulai menggunakan layanan MontirQ.</p>
-          </div>
-
-          <form action="#" class="auth-form">
-            <div class="form-group">
-              <label for="registerName"> Nama Lengkap </label>
-
-              <div class="input-container">
-                <span class="input-icon"> 👤 </span>
-
-                <input
-                  type="text"
-                  id="registerName"
-                  placeholder="Masukkan nama lengkap"
-                />
-              </div>
-            </div>
-
-            <div class="form-group">
-              <label for="registerEmail"> Email atau Nomor HP </label>
-
-              <div class="input-container">
-                <span class="input-icon"> ✉ </span>
-
-                <input
-                  type="text"
-                  id="registerEmail"
-                  placeholder="Masukkan email atau nomor HP"
-                />
-              </div>
-            </div>
-
-            <!-- Pilihan Peran -->
-
-            <div class="form-group">
-              <label> Daftar sebagai </label>
-
-              <div class="role-selection">
-                <label class="role-card">
-                  <input type="radio" name="role" value="pengguna" checked />
-
-                  <span class="role-content">
-                    <span class="role-icon"> 🚗 </span>
-
-                    <span>
-                      <strong> Pengguna </strong>
-
-                      <small> Cari montir dan layanan </small>
-                    </span>
-                  </span>
-                </label>
-
-                <label class="role-card">
-                  <input type="radio" name="role" value="montir" />
-
-                  <span class="role-content">
-                    <span class="role-icon"> 🔧 </span>
-
-                    <span>
-                      <strong> Montir </strong>
-
-                      <small> Tawarkan jasa perbaikan </small>
-                    </span>
-                  </span>
-                </label>
-
-                <label class="role-card">
-                  <input type="radio" name="role" value="bengkel" />
-
-                  <span class="role-content">
-                    <span class="role-icon"> 🏪 </span>
-
-                    <span>
-                      <strong> Bengkel </strong>
-
-                      <small> Kelola layanan bengkel </small>
-                    </span>
-                  </span>
-                </label>
-              </div>
-            </div>
-
-            <div class="form-group">
-              <label for="registerPassword"> Buat Kata Sandi </label>
-
-              <div class="input-container">
-                <span class="input-icon"> 🔒 </span>
-
-                <input
-                  type="password"
-                  id="registerPassword"
-                  placeholder="Buat kata sandi"
-                />
-              </div>
-            </div>
-
-            <label class="agreement">
-              <input type="checkbox" />
-
-              <span>
-                Saya menyetujui
-                <a href="#"> Syarat & Ketentuan </a>
-                serta
-                <a href="#"> Kebijakan Privasi </a>
-              </span>
-            </label>
-
-            <button type="submit" class="auth-submit-button">
-              Buat Akun MontirQ
-              <span>→</span>
-            </button>
-          </form>
-
-          <p class="change-form-text">
-            Sudah memiliki akun?
-
-            <button type="button" class="change-form-button" id="showLogin">
-              Masuk sekarang
-            </button>
-          </p>
+          <a href="Services.html"> Services </a>
         </div>
-      </section>
-    </main>
+
+        <!-- Layanan -->
+        <div class="footer-menu">
+          <h3>Layanan</h3>
+
+          <a href="Services.html"> MontirQ Rescue </a>
+
+          <a href="Services.html"> Booking Servis </a>
+
+          <a href="Services.html"> MontirQ Market </a>
+        </div>
+
+        <!-- Informasi Kontak -->
+        <div class="footer-contact">
+          <h3>Hubungi Kami</h3>
+
+          <p>📞 0800-123-456</p>
+
+          <p>✉ support@montirq.com</p>
+
+          <p>📍 Indonesia</p>
+        </div>
+      </div>
+
+      <!-- Bagian Copyright -->
+      <div class="footer-bottom">
+        <p>© 2026 MontirQ. Semua Hak Dilindungi.</p>
+
+        <p>Prototype Presentation</p>
+      </div>
+    </footer>
 
     <!-- JavaScript -->
-
-    <script>
-      const loginForm = document.getElementById("loginForm");
-      const registerForm = document.getElementById("registerForm");
-      const showRegister = document.getElementById("showRegister");
-      const showLogin = document.getElementById("showLogin");
-
-      showRegister.addEventListener("click", function () {
-        loginForm.classList.add("hidden-form");
-        registerForm.classList.remove("hidden-form");
-      });
-
-      showLogin.addEventListener("click", function () {
-        registerForm.classList.add("hidden-form");
-        loginForm.classList.remove("hidden-form");
-      });
-
-      const passwordButtons = document.querySelectorAll(".show-password");
-
-      passwordButtons.forEach(function (button) {
-        button.addEventListener("click", function () {
-          const input = button.parentElement.querySelector("input");
-          if (input.type === "password") {
-            input.type = "text";
-            button.textContent = "🙈";
-          } else {
-            input.type = "password";
-            button.textContent = "👁";
-          }
-        });
-      });
-    </script>
+    <script src="js/script.js"></script>
   </body>
 </html>

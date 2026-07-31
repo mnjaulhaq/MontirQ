@@ -17,6 +17,10 @@ ABOUT HERO
     ),
     linear-gradient(135deg, #f5fbf7 0%, #ffffff 55%, #edf8f1 100%);
 }
+.ecosystem-icon i {
+    font-size: 30px;
+    color: #146c43;
+}
 
 .about-hero-container {
   width: min(92%, var(--container-width));

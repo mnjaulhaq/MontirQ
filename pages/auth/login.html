@@ -26,25 +26,34 @@
     />
 
     <style>
+      html,
+      body {
+        width: 100%;
+        min-height: 100%;
+        margin: 0;
+        padding: 0;
+        background: #0b1729;
+        overflow-x: hidden;
+      }
       body {
         font-family: "Poppins", sans-serif;
       }
     </style>
   </head>
 
-  <body class="min-h-screen bg-slate-200">
-    <main class="min-h-screen lg:grid lg:grid-cols-2">
+  <body class="min-h-screen bg-[#0B1729]">
+    <main
+      class="min-h-[100dvh] bg-gradient-to-br from-[#2B4A78] via-[#1C3458] to-[#0B1729] lg:grid lg:grid-cols-2"
+    >
       <!-- =========================================
              MOBILE
              TAMPILAN SESUAI CONTOH
         ========================================== -->
 
-     <section
-    class="min-h-screen bg-gradient-to-br from-[#2B4A78] via-[#1C3458] to-[#0B1729] px-7 py-10 text-white lg:hidden"
->
-        <div
-          class="mx-auto w-full mx-w-[390px]"
-        >
+      <section
+        class="min-h-[100dvh] w-full bg-transparent px-7 py-10 text-white lg:hidden"
+      >
+        <div class="mx-auto w-full mx-w-[390px]">
           <!-- Logo -->
 
           <div class="flex flex-col items-center">

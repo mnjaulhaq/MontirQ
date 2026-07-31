@@ -61,7 +61,6 @@
               <i
                 class="fa-solid fa-screwdriver-wrench absolute left-1/2 top-7 -translate-x-1/2 text-[75px] text-white"
               ></i>
-
             </div>
 
             <!-- Nama Aplikasi -->
@@ -365,12 +364,14 @@
         .getElementById("mobileLoginForm")
         .addEventListener("submit", function (event) {
           event.preventDefault();
+          window.location.href = "../dashboard/dashboard.html";
         });
 
       document
         .getElementById("desktopLoginForm")
         .addEventListener("submit", function (event) {
           event.preventDefault();
+          window.location.href = "../dashboard/dashboard.html";
         });
     </script>
   </body>
